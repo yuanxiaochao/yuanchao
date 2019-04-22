@@ -2,7 +2,7 @@
   "name": "vue_addname",
   "version": "1.0.0",
   "description": "demo",
-  "author": "chenyuanjun",
+  "author": "yuanchao",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
