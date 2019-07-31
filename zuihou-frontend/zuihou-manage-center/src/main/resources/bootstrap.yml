@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: zuihou-manage-center
+  profiles:
+    active: dev

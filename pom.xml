@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.github.zuihou</groupId>
+    <artifactId>zuihou-admin-cloud</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <url>https://gitee.com/zuihou111/zuihou-admin-cloud</url>
+    <name>${project.artifactId}</name>
+    <description>zuihou-admin-cloud父pom, 对jar版本，仓库进行管理</description>
+    <licenses>
+        <license>
+            <name>Apache 2</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+            <comments>A business-friendly OSS license</comments>
+        </license>
+    </licenses>
+
+    <modules>
+        <module>zuihou-dependencies</module>
+        <module>zuihou-commons</module>
+        <module>zuihou-backend</module>
+        <module>zuihou-support</module>
+        <!-- 前端项目已经集成了shiro，并对接登录成功，但没有任何页面功能 前端项目已经迁移到vue项目： https://github.com/zuihou/zuihou-admin-ui -->
+        <!--<module>zuihou-frontend</module>-->
+    </modules>
+    <packaging>pom</packaging>
+    <developers>
+        <developer>
+            <name>zuihou</name>
+            <email>244387066@qq.com</email>
+        </developer>
+    </developers>
+
+    <!--    <properties>-->
+    <!--        <java.version>1.8</java.version>-->
+    <!--        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>-->
+    <!--        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>-->
+    <!--        <maven.compiler.plugin.version>3.6.1</maven.compiler.plugin.version>-->
+    <!--    </properties>-->
+    <!--    <build>-->
+    <!--        <finalName>${project.artifactId}</finalName>-->
+    <!--        <resources>-->
+    <!--            <resource>-->
+    <!--                <directory>src/main/resources</directory>-->
+    <!--                <includes>-->
+    <!--                    <include>**</include>-->
+    <!--                </includes>-->
+    <!--                <excludes>-->
+    <!--                    <exclude>rebel.xml</exclude>-->
+    <!--                </excludes>-->
+    <!--                <filtering>true</filtering>-->
+    <!--            </resource>-->
+    <!--        </resources>-->
+    <!--        <pluginManagement>-->
+    <!--            <plugins>-->
+    <!--                <plugin>-->
+    <!--                    <groupId>org.springframework.boot</groupId>-->
+    <!--                    <artifactId>spring-boot-maven-plugin</artifactId>-->
+    <!--                    <executions>-->
+    <!--                        <execution>-->
+    <!--                            <goals>-->
+    <!--                                <goal>repackage</goal>-->
+    <!--                                <goal>build-info</goal>-->
+    <!--                            </goals>-->
+    <!--                        </execution>-->
+    <!--                    </executions>-->
+    <!--                </plugin>-->
+
+    <!--                <plugin>-->
+    <!--                    <groupId>org.apache.maven.plugins</groupId>-->
+    <!--                    <artifactId>maven-compiler-plugin</artifactId>-->
+    <!--                    <version>${maven.compiler.plugin.version}</version>-->
+    <!--                    <configuration>-->
+    <!--                        <source>${java.version}</source>-->
+    <!--                        <target>${java.version}</target>-->
+    <!--                        <encoding>${project.build.sourceEncoding}</encoding>-->
+    <!--                    </configuration>-->
+    <!--                </plugin>-->
+
+    <!--            </plugins>-->
+    <!--        </pluginManagement>-->
+    <!--        <plugins>-->
+    <!--            <plugin>-->
+    <!--                <groupId>org.apache.maven.plugins</groupId>-->
+    <!--                <artifactId>maven-javadoc-plugin</artifactId>-->
+    <!--                <version>3.0.0</version>-->
+    <!--            </plugin>-->
+    <!--        </plugins>-->
+    <!--    </build>-->
+
+</project>
